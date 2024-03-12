@@ -48,6 +48,18 @@
       padding: 0;
       list-style: none;
     }
+
+    .d-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .d-flex-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   </style>
 </head>
 
@@ -65,17 +77,19 @@
       ...and I am a human on the Internet.
     </p>
 
-    <ul>
-      <!-- Replace __this_page__ with your domain -->
-      <li><a class="u-uid u-url" href="https://peret.github.io/website">My New Website</a></li>
+    <a class="u-uid u-url" href="https://peret.github.io/website">My New Website</a>
 
-      <!-- Update or remove the below links! -->
-
-      <!-- Replace _mygithubid_ with your GitHub username in both places on the next line: -->
-      <li>Github: <a class="u-url" href="https://github.com/peret" rel="me">@peret</a></li>
-
-      <!-- Replace _mytwitterid_ with your Twitter username in both places on the next line: -->
-      <li>Mastodon: <a class="u-url" href="https://techhub.social/@drscheffler" rel="me">@drscheffler@techhub.social</a>
+    <ul class="d-flex">
+      <li>
+        <a class="u-url d-flex-column" href="https://github.com/peret" rel="me">
+          <img src="assets/github-mark-white.svg" width="50" alt="GitHub Logo">
+          @peret
+        </a>
+      </li>
+        <a class="u-url d-flex-column" href="https://techhub.social/@drscheffler" rel="me">
+          <img src="assets/mastodon.svg" alt="Mastodon Logo" width="50">
+          @drscheffler
+        </a>
       </li>
 
     </ul>
